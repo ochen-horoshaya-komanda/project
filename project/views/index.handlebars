@@ -1,0 +1,38 @@
+
+  <table>
+  <tr>
+  <th>Название</th>
+  <th>Дата</th>
+  <th>Место</th>
+  <th>Координаты</th>
+  <th>Тип</th>
+  <th>Рейтинг</th>
+  <th></th>
+  </tr>
+  {{#each events}}
+  	<tr>
+	  	<td>
+	  	{{name}}
+	  	</td>
+	  	<td>
+	  	{{time}}
+	  	</td>
+	  	<td>
+	  	{{place}}
+	  	</td>
+	  	<td>
+	  	{{latitude}}&nbsp{{longitude}}
+	  	</td>
+	  	<td>
+	  	{{type}}
+	  	</td>
+	  	<td>
+	  	{{rating}}
+	  	</td>
+	  	<td>
+	  	<img src="{{image}}" height="200px">		
+	  	</td>
+  	</tr>
+  {{/each}}
+  </p>
+  </table>
